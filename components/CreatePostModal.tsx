@@ -217,7 +217,7 @@ export default function CreatePostModal() {
 
                       <div className="border border-gray-200 rounded-md inset-3 cursor-pointer mt-1">
                         <div className="w-full px-4 py-2 space-x-4 flex items-center justify-between">
-                          <h1 className="text-[10px] sm:text-sm md:text-base font-semibold">
+                          <h1 className="hidden sm:text-xs md:text-base font-semibold">
                             Add to your post
                           </h1>
                           <div className="flex items-center space-x-1 md:space-x-2 ">
@@ -228,7 +228,7 @@ export default function CreatePostModal() {
                               <h1 className="absolute -top-10 shadow-lg whitespace-nowrap z-20 left-1/2 -translate-x-1/2 group-hover:block hidden bg-neutral-700 px-3 py-2 text-xs text-white rounded-lg">
                                 Photo/video
                               </h1>
-                              <PhotoIcon className="text-green-600 h-7" />
+                              <PhotoIcon className="text-green-600 h-7 animate-bounce" />
                             </div>
                             <div className="rounded-full group hover:bg-gray-100 cursor-pointer duration-200 p-1 relative">
                               <h1 className="absolute -top-10 shadow-lg whitespace-nowrap z-20 left-1/2 -translate-x-1/2 group-hover:block hidden bg-neutral-700 px-3 py-2 text-xs text-white rounded-lg">
