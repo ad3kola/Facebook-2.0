@@ -56,8 +56,8 @@ function Sidebar() {
     </nav>
     
     {sidebarModalState && (
-      <div className="lg:hidden absolute top-2 left-0 right-0 w-full h-full bg-gray-100 z-50">
-        <div className="flex flex-col h-full px-4 py-2 justify-between gap-3 overflow-hidden">
+      <div className="lg:hidden absolute top-2 left-0 right-0 w-full h-full bg-gray-100 z-40">
+        <div className="flex flex-col h-full px-4 py-2 gap-3 overflow-hidden">
         <div className="flex px-2 flex-col gap-1">
           <div className="p-2 flex items-center space-x-3 hover:bg-gray-200 cursor-pointer duration-200 rounded-lg">
             {session ? (
@@ -86,7 +86,7 @@ function Sidebar() {
             <SidebarLink key={indx} name={link.name} Icon={link.Icon} />
           ))}
         </div>
-        <div className="flex flex-wrap whitespace-nowrap space-x-1 px-2">
+        <div className="flex flex-wrap whitespace-nowrap space-x-1 px-2 mt-3 ml-0 sm:ml-2 md:ml-5 ">
           {BottomSidebarLinks.map((link, indx) => (
             <h1
               key={indx}

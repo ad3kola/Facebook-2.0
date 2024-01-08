@@ -4,7 +4,7 @@ import PostsSection from "./PostsSection";
 
 function MainFeedSection() {
   return (
-    <div className="flex-grow w-screen max-w-[680px] flex flex-col items-center overflow-y-scroll scrollbar-hide mt-3">
+    <div className="flex-grow w-screen max-w-[680px] z-30 flex flex-col items-center overflow-y-scroll scrollbar-hide mt-3">
       <div className="w-full flex flex-col mx-auto items-center py-4 px-2 gap-5">
         {/* Create Story */}
         <div className="whitespace-nowrap bg-white rounded-lg p-2 w-full flex">

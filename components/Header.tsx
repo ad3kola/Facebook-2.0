@@ -34,7 +34,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-white shadow px-5 flex items-center justify-between fixed top-0 left-0 right-0 py-2 md:py-0 z-60">
+    <header className="bg-white shadow px-5 flex items-center justify-between fixed top-0 left-0 right-0 py-2 md:py-0 z-50">
       {/* Header Left */}
       <div className="flex flex-shrink-0 items-center space-x-2">
         <Image
@@ -99,7 +99,7 @@ function Header() {
           <>
             <div
               onClick={handleSignOut}
-              className="group flex relative flex-col items-center rounded-full cursor-pointer justify-center"
+              className="group flex relative flex-col items-center whitespace-nowrap rounded-full cursor-pointer justify-center"
             >
               <Image
                 src={session.user?.image as string}
@@ -108,8 +108,8 @@ function Header() {
                 height={40}
                 className="rounded-full object-contain group-hover:brightness-110 duration-200"
               />
-              <h1 className="absolute top-12 z-60 left-1/2 -translate-x-1/2 group-hover:block hidden bg-neutral-600 px-3 py-2 text-xs text-white rounded-lg">
-                Account
+              <h1 className="text-center absolute top-12 z-60 left-1/2 -translate-x-1/2 group-hover:block hidden bg-neutral-600 px-3 py-2 text-xs text-white rounded-lg">
+                Sign Out
               </h1>
             </div>
           </>
