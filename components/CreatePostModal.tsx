@@ -220,7 +220,7 @@ export default function CreatePostModal() {
                           <h1 className="hidden sm:text-xs md:text-base font-semibold">
                             Add to your post
                           </h1>
-                          <div className="flex items-center space-x-1 md:space-x-2 ">
+                          <div className="flex items-center space-x-1 md:space-x-2 flex-1">
                             <div
                               onClick={() => filePickerRef.current?.click()}
                               className="rounded-full group hover:bg-gray-100 cursor-pointer duration-200 p-1 relative"
