@@ -55,19 +55,19 @@ function CreatePostSection() {
       <div className="w-full flex items-center justify-between space-x-1">
         <div className="w-full flex items-center justify-center space-x-1 hover:bg-gray-100 rounded-md cursor-pointer duration-100 px-2 sm:px-3 py-2">
           <VideoCameraIcon className="h-6 text-red-600" />
-          <h1 className="text-sm lg:text-base whitespace-nowrap text-gray-600 font-semibold">
+          <h1 className="text-xs sm:text-sm lg:text-base whitespace-nowrap text-gray-600 font-semibold">
             Live video
           </h1>
         </div>
         <div onClick={openPostModal} className="w-full flex items-center justify-center space-x-1 hover:bg-gray-100 rounded-md cursor-pointer duration-100 px-2 sm:px-3  py-2">
           <PhotoIcon className="h-6 text-green-600" />
-          <h1 className="text-sm lg:text-base whitespace-nowrap text-gray-600 font-semibold">
+          <h1 className="text-xs sm:text-sm lg:text-base whitespace-nowrap text-gray-600 font-semibold">
             Photo/video
           </h1>
         </div>
         <div className="w-full flex items-center justify-center space-x-1 hover:bg-gray-100 rounded-md cursor-pointer duration-100 p-2">
           <FaceSmileIcon className="h-6 text-yellow-500" />
-          <h1 className="text-[15px] whitespace-nowrap text-gray-600 font-semibold">
+          <h1 className="text-xs sm:text-[15px] whitespace-nowrap text-gray-600 font-semibold">
             Feeling/activity
           </h1>
         </div>
