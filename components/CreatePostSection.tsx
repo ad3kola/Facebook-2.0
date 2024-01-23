@@ -3,7 +3,6 @@ import { openModal } from "@/redux/features/PostModalSlice";
 import { AppDispatch, useAppSelector } from "@/redux/store";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { FaceSmileIcon } from "@heroicons/react/24/outline";
 import { PhotoIcon, VideoCameraIcon } from "@heroicons/react/24/solid";

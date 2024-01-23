@@ -3,13 +3,16 @@ import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
+const apiKey = process.env.FIREBASE_API_KEY!
+const appId = process.env.FIREBASE_APP_ID!
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAcZwoKB3lDjmDP9igW7NAaEWSs8LUfbGc",
-  authDomain: "facebook-clone-build-7586b.firebaseapp.com",
-  projectId: "facebook-clone-build-7586b",
-  storageBucket: "facebook-clone-build-7586b.appspot.com",
-  messagingSenderId: "1025951340309",
-  appId: "1:1025951340309:web:92694a300c046173cd7b1c"
+  apiKey,
+  authDomain: "instagram---facebook---twitter.firebaseapp.com",
+  projectId: "instagram---facebook---twitter",
+  storageBucket: "instagram---facebook---twitter.appspot.com",
+  messagingSenderId: "544640961165",
+  appId,
 };
 
 // Initialize Firebase
