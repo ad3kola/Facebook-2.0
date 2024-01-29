@@ -3,7 +3,8 @@ import { BottomSidebarLinks, SidebarLinks } from "@/utils/Sidebar";
 import React from "react";
 import SidebarLink from "./SidebarLink";
 import { UsersIcon } from "@heroicons/react/24/solid";
-import { useSession } from "next-auth/react";
+import { UserIcon } from "@heroicons/react/24/outline";
+import { signIn, useSession, signOut } from "next-auth/react";
 import Image from "next/image";
 import { useAppSelector } from "@/redux/store";
 
@@ -17,7 +18,7 @@ function Sidebar() {
         <div className="flex py-2 flex-col gap-1">
           <div className="p-2 flex items-center space-x-3 hover:bg-gray-200 cursor-pointer duration-200 rounded-lg">
             {session ? (
-              <>
+              <div onClick={() => signOut()} className="flex items-center space-x-2">
                 <Image
                   src={session.user?.image as string}
                   alt={session.user?.name as string}
@@ -28,14 +29,11 @@ function Sidebar() {
                 <h1 className="text-neutral-950 font-semibold text-sm">
                   {session.user?.name}
                 </h1>
-              </>
-            ) : (
-              <div className="flex items-center space-x-3 hover:bg-gray-200 cursor-pointer duration-200 rounded-lg">
-                <div className="bg-gray-200 rounded-full h-9 w-9"></div>
-                <h1 className="text-neutral-950 font-semibold text-sm">
-                  Signing in
-                </h1>
               </div>
+            ) : (
+              <div onClick={() => signIn()}>
+              <SidebarLink name='Sign In' Icon={UserIcon} />
+</div>
             )}
           </div>
           {SidebarLinks.map((link, indx) => (

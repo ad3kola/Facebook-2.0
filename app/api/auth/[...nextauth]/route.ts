@@ -11,9 +11,6 @@ const handler = NextAuth({
       clientSecret,
     }),
   ],
-  pages: {
-    signIn: "/auth/signin",
-  }
 })
 
 export { handler as GET, handler as POST }
